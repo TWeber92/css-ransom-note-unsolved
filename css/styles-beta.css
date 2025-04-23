@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&family=Yuji+Boku&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Supermercado+One&family=Yuji+Boku&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    background-color: #282a56;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.word {
+    max-width: max-content;
+    display: flex;
+    gap: 20px;
+}
+
+.word>span {
+    position: relative;
+    padding: 20px 30px;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90px;
+    max-height: 90px;
+    border: 6px solid grey;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.8s ease-in-out;
+}
+
+.word span:nth-child(odd) {
+    border: 6px dashed green;
+    text-decoration-style: double !important;
+    text-decoration-thickness: 2px !important;
+}
+
+.word span:nth-child(even) {
+    border: 10px double orangered;
+    text-decoration-color: red !important;
+    text-decoration-style: wavy !important;
+    text-decoration-thickness: 3px !important;
+}
+
+.solo-letter {
+    font-size: 72px;
+    font-weight: bold;
+    color: black;
+    background-color: hotpink;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-family: 'Piazolla', sans-serif;
+}
+
+.symbols {
+    font-size: 72px;
+    font-weight: bold;
+    color: yellow;
+    background-color: black;
+    text-decoration: none;
+    font-family: 'Supermercado One', sans-serif;
+}
+
+/* W Letters */
+
+.word span[class*="WLetter"] {
+    font-size: 72px;
+    font-weight: bold;
+    color: rgb(0, 2, 2);
+    background-color: crimson;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: 'Piazolla', sans-serif;
+}
+
+/* H Letters */
+
+.word span[class*="HLetter"] {
+    font-size: 36px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    background-color: white;
+    text-decoration: overline;
+    text-transform: lowercase;
+    font-family: 'Ceviche One', sans-serif;
+}
+
+/* Y Letters */
+
+.word span[class*="YLetter"] {
+    font-size: 60px;
+    font-weight: normal;
+    color: coral;
+    background-color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Raleway Dots', sans-serif;
+}
+
+/* D Letters */
+
+
+.word span[class*="DLetter"],
+.word span[class*="DTwoLetter"] {
+    font-size: 60px;
+    font-weight: 400;
+    color: firebrick;
+    background-color: rgb(133, 131, 131);
+    text-decoration: underline;
+    text-transform: lowercase;
+    font-family: 'Ceviche One', sans-serif;
+}
+
+/* I Letters */
+
+.word span[class*="ILetter"] {
+    font-size: 42px;
+    font-weight: 700;
+    color: darkgreen;
+    background-color: yellow;
+    text-decoration: overline;
+    text-transform: uppercase;
+    font-family: 'Yuji Boku', sans-serif;
+}
+
+/* T Letters */
+
+.word span[class*="TLetter"] {
+    font-size: 64px;
+    font-weight: bold;
+    color: saddlebrown;
+    background-color: rgb(5, 191, 253);
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: 'Supermercado One', sans-serif;
+}
+
+/* E Letters */
+
+.word span[class*="ELetter"],
+.word span[class*="ETwoLetter"],
+.word span[class*="EThreeLetter"] {
+    font-size: 48px;
+    font-weight: 400;
+    color: teal;
+    background-color: red;
+    text-decoration: underline;
+    text-decoration-color: black !important;
+    text-transform: uppercase;
+    font-family: "Supermercado One", sans-serif;
+}
+
+/* R Letters */
+
+.word span[class*="RLetter"] {
+    font-size: 72px;
+    font-weight: normal;
+    color: purple;
+    background-color: cadetblue;
+    text-decoration: underline;
+    text-transform: lowercase;
+    font-family: 'Ceviche One', sans-serif;
+}
+
+/* O Letters */
+
+.word span[class*="OLetter"],
+.word span[class*="OTwoLetter"] {
+    font-size: 72px;
+    font-weight: lighter;
+    color: darkorange;
+    background-color: navy;
+    text-transform: lowercase;
+    font-family: 'Lobster', sans-serif;
+}
+
+/* N Letters */
+
+.word span[class*="NLetter"],
+.word span[class*="NTwoLetter"] {
+    font-size: 54px;
+    font-weight: bold;
+    color: aqua;
+    background-color: darkslateblue;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-family: 'Yuji Boku', sans-serif;
+}
+
+/* V Letters */
+
+.word span[class*="VLetter"] {
+    font-size: 64px;
+    font-weight: bold;
+    color: darkolivegreen;
+    background-color: darkviolet;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: 'Yuji Boku', sans-serif;
+}
+
+/* L Letters */
+.word span[class*="LLetter"],
+.word span[class*="LTwoLetter"] {
+    font-size: 38px;
+    font-weight: 400;
+    color: rgb(254, 4, 4);
+    background-color: peru;
+    text-transform: uppercase;
+    font-family: 'Lobster', sans-serif;
+}
+
+/* P Letters */
+
+.word span[class*="PLetter"] {
+    font-size: 72px;
+    font-weight: normal;
+    color: rgb(255, 145, 0);
+    background-color: yellow;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-family: 'Lobster', sans-serif;
+}
+
+/* A Letters */
+
+.word span[class*="ALetter"] {
+    font-size: 72px;
+    font-weight: lighter;
+    color: purple;
+    background-color: pink;
+    text-transform: uppercase;
+    font-family: 'Lobster', sans-serif;
+}
+
+/* K Letters */
+
+.word span[class*="KLetter"] {
+    font-size: 64px;
+    font-weight: 400;
+    color: darkkhaki;
+    background-color: darkslategrey;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-family: 'Yuji Boku', sans-serif;
+}
+
+/* U Letters */
+
+.word span[class*="ULetter"] {
+    font-size: 72px;
+    color: gold;
+    background-color: gray;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-family: 'Raleway Dots', sans-serif;
+}
+
+/* G Letters */
+
+.word span[class*="GLetter"],
+.word span[class*="GTwoLetter"] {
+    font-size: 64px;
+    font-weight: normal;
+    color: lime;
+    background-color: rgb(46, 1, 46);
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-family: 'Supermercado One', sans-serif;
+}
+
+/* S Letters */
+
+.word span[class*="SLetter"],
+.word span[class*="STwoLetter"] {
+    font-size: 52px;
+    font-weight: 400;
+    color: silver;
+    background-color: steelblue;
+    text-decoration: underline;
+    text-transform: lowercase;
+    font-family: 'Ceviche One', sans-serif;
+}
